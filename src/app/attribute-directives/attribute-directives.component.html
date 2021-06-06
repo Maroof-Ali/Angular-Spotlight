@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1>DIRECTIVES</h1>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-lg-8">
+            <p>Directives are instructions in DOM</p>
+            <p>Components—directives with a template. This type of directive is the most common directive type.</p>
+            <p>Attribute directives—directives that change the appearance or behavior of an element, component, or another directive. ngClass, ngStyle, ngModel</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-lg-6">
+            <h3>ngClass and ngStyle and ngModel too...</h3>
+            <input class="form-control" [(ngModel)]='inputName' type="text" placeholder="Enter a name from list to see ngClass magic...">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2">
+            <div *ngFor="let user of users">
+                <h5 [ngClass]="{highlighter : user.name == inputName}">{{user.name}}</h5>
+                <p [ngStyle]="{backgroundColor : user.status=='online' ? '#80ffaa' : '#ffb3b3'}">{{user.status}}</p>
+            </div>
+        </div>
+        <div class="col-lg-10">
+            <p style="margin-left: 400px;">If input name == user name, its highlighted. done with ngModel and ngClass.</p>
+            <p style="margin-left: 400px;">status background-color is applied with ngStyle</p>
+        </div>
+    </div>
+    <hr>
+</div>

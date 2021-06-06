@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1>Data Binding And Property Binding</h1>
+        </div>
+    </div>
+<hr>
+    <div class="row">
+        <div class="col-lg-6">
+            <h3>String Interpolation</h3>
+            <p>attribute in .ts is bound in html template with double curly brackets</p>
+            <h3>Property Binding</h3>
+            <p>DOM element properties e.g. disable,innerText,value (and many many more) are bound with square brackets</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-lg-6">
+            <h4>String interpolation with user object:</h4>
+            <p>Name         :       {{user.name}}</p>
+            <p>Profession   :       {{user.profession}}</p>
+            <p>Age          :       {{user.age}}</p>
+        </div>
+        <div class="col-lg-6">
+            <h4>Property binding:</h4>
+            <p>Button's disabled property changes after 3 seconds</p>
+            <button class="btn btn-primary" [disabled]="!disableButton" >Button</button>
+        </div>
+    </div>
+    <hr>
+    
+</div>

@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1>DIRECTIVES</h1>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-lg-8">
+            <p>Structural directives—directives that change the DOM layout by adding and removing DOM elements.ngIf, ngFor  | starts with an asterik *</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-lg-4">
+            <h3>ngFor</h3>
+            <p>array of items displayed with ngFor</p>
+            <ul class="list-group">
+                <li class="list-group-item" *ngFor="let item of items; let i = index">{{i+1}} : {{item}}</li>
+            </ul>
+        </div>
+        <div class="col-lg-4">
+            <h3>ngIf</h3>
+            <input type="text" (input)="userInput($event)" [value]="number">
+            <p>{{number}}</p>
+            <p *ngIf="number%2 != 0">Number is odd</p>
+            <p *ngIf="number%2 == 0">Number is even</p>
+        </div>
+        <div class="col-lg-4">
+            <h3>ngIf-then-else</h3>
+            <p>Its like if then else statement but can also be used as if-else only</p>
+            <div *ngIf="condition ; then thenBlock else elseBlock"></div>
+            <ng-template #thenBlock>
+                <p class="text-success">This is then block</p>
+            </ng-template>
+            <ng-template #elseBlock>
+                <p class="text-warning">This is else block</p>
+            </ng-template>
+            <button class="btn btn-primary" (click)="toggleThenElseBlock()">Toggle</button>
+            <p>Click button to toggle then-else</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <h3>ngSwitch</h3>
+        <ul *ngFor="let person of people" [ngSwitch]="person.country">
+            <li *ngSwitchCase="'UK'" class="text-primary">{{person.name}}  - {{person.country}}</li>
+            <li *ngSwitchCase="'PAK'" class="text-success">{{person.name}}  - {{person.country}}</li>
+            <li *ngSwitchCase="'USA'" class="text-warning">{{person.name}}  - {{person.country}}</li>
+            <li *ngSwitchCase="'HK'" class="text-danger">{{person.name}}  - {{person.country}}</li>
+        </ul>
+    </div>
+</div>

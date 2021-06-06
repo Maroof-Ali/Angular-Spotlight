@@ -1,16 +1,36 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { Page404 } from './404-not-found/not-found.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AttributeDirectivesComponent } from './attribute-directives/attribute-directives.component';
+import { ApplyingDirectivesComponent } from './custom-directives/custom-directive.component';
+import { HighlighterDirective } from './custom-directives/custom.directive';
+import { DataAndPropertyBinding } from './data-and-property-binding/data-and-property-binding.component';
+import { EventBindingComponent } from './event-binding/event-binding.component';
+import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component';
+import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WelcomeComponent,
+    LifecycleHooksComponent,
+    DataAndPropertyBinding,
+    EventBindingComponent,
+    AttributeDirectivesComponent,
+    StructuralDirectivesComponent,
+    Page404,
+    ApplyingDirectivesComponent,
+    HighlighterDirective
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

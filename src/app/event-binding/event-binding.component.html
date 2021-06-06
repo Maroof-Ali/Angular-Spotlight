@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1>Event binding</h1>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-lg-12">
+            <h3>Common HTML Events</h3>
+            <ul>
+                <li>onchange</li>
+                <li>input</li>
+                <li>onclick</li>
+                <li>keydown</li>
+                <li>mousehover</li>
+            </ul>
+            <p>The list is so long : <a href="https://www.w3schools.com/jsref/dom_obj_event.asp">HTML Events W3School</a></p>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-lg-6">
+            <h4>Click Event binding:</h4>
+            <p>Count : {{count}}</p>
+            <button class="btn btn-primary" (click)="addCount()">Add Count</button>
+        </div>
+        <div class="col-lg-6">
+            <h4>Input Event binding:</h4>
+            <p>input event object is passed in the function, open console to view event object</p>
+            <input class="form-control" (input)="showInputEventValue($event)">
+            <p>{{inputValue}}</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-lg-6">
+            <h4>Two-way data binding with ngModel:</h4>
+            <label>Enter data:</label>
+            <input class="form-control" (input)="showTwoWayDataBinding($event)">
+            <label>Enter data again</label>
+            <input class="form-control" [(ngModel)]="userInputValue">
+            <p>{{userInputValue}}</p>
+        </div>
+    </div>
+</div>
