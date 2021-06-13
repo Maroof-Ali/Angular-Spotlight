@@ -7,5 +7,12 @@ import { Component } from "@angular/core";
 
 export class ParentComponent {
 
+    messageToChild : any;
+
+    constructor(){}
+
+    sendMessage(){
+        console.log(this.messageToChild);
+    }
     
 }

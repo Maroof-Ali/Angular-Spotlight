@@ -1,1 +1,17 @@
-<p>Parent</p>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h2>Parent Component</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h5>Send message to child</h5>
+            <p>Type message : </p>
+            <input type="text" [(ngModel)]="messageToChild">
+        </div>
+    </div>
+</div>
+
+
+<child [message]="messageToChild"></child>

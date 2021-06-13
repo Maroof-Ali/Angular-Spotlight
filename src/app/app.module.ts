@@ -6,6 +6,7 @@ import { Page404 } from './404-not-found/not-found.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AttributeDirectivesComponent } from './attribute-directives/attribute-directives.component';
+import { ChildComponent } from './components-communication/child-component/child.component';
 import { ParentComponent } from './components-communication/parent.component';
 import { ApplyingDirectivesComponent } from './custom-directives/custom-directive.component';
 import { HighlighterDirective } from './custom-directives/custom.directive';
@@ -27,7 +28,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
     Page404,
     ApplyingDirectivesComponent,
     HighlighterDirective,
-    ParentComponent
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
