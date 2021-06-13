@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Page404 } from './404-not-found/not-found.component';
 import { AttributeDirectivesComponent } from './attribute-directives/attribute-directives.component';
+import { ParentComponent } from './components-communication/parent.component';
 import { ApplyingDirectivesComponent } from './custom-directives/custom-directive.component';
 import { DataAndPropertyBinding } from './data-and-property-binding/data-and-property-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path : 'attribute-directives', component : AttributeDirectivesComponent},
   {path : 'structural-directives', component : StructuralDirectivesComponent},
   {path : 'custom-directives', component : ApplyingDirectivesComponent},
+  {path : 'components-communication', component : ParentComponent},
   {path : '**', component : Page404}
 ];
 
