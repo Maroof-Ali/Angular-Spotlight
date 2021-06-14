@@ -1,17 +1,24 @@
 <div class="container">
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-6">
             <h2>Parent Component</h2>
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-6">
             <h5>Send message to child</h5>
             <p>Type message : </p>
             <input type="text" [(ngModel)]="messageToChild">
         </div>
     </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <h5>Message received by child component</h5>
+            <p style="color:red">{{messageReceivedFromChild}}</p>
+        </div>
+    </div>
 </div>
 
+<hr>
 
-<child [message]="messageToChild"></child>
+<child [message]="messageToChild" name="Maroof Ali" [status]="'online'" (childOutputToParent)="receiveMessage($event)"></child>

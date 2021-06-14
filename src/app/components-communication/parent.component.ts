@@ -9,10 +9,12 @@ export class ParentComponent {
 
     messageToChild : any;
 
+    messageReceivedFromChild : any;
+
     constructor(){}
 
-    sendMessage(){
-        console.log(this.messageToChild);
+    receiveMessage(value : any){
+        this.messageReceivedFromChild = value;
     }
-    
+
 }
