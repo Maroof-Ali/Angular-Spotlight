@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <h1>@ViewChild()</h1>
+            <p>With @ViewChild(), we can obtain references of template elements and have them injected into our component class by querying the template(HTML)</p>
+            <p>note that these references are not complete DOM elements but references of angular core class of "ElementRef"</p>
+            <p style="color: red;">There is a lot to cover about this topic only basics are discussed here!</p>
+            <p>example:</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 border">
+            <p>A heading :</p>
+            <h5 #heading>heading</h5>
+            <p>An input field :</p>
+            <input type="text" #inputField>
+            <button class="btn btn-primary ml-5" (click)="show()">Show on Console</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>on console we have the references of template elemets with all properties</p>
+            <p>we can also change these reference properties</p>
+            <p>Click to change heading "innerText" property</p>
+            <button class="btn btn-primary ml-5" (click)="changeHeadingText()">Change Heading Text</button>
+            <p>click to disable input field</p>
+            <button class="btn btn-primary ml-5" (click)="disableInput()">Disable Input</button>
+        </div>
+    </div>
+</div>

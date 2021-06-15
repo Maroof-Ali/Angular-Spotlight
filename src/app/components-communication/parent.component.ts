@@ -11,6 +11,8 @@ export class ParentComponent {
 
     messageReceivedFromChild : any;
 
+    status = "online";
+
     constructor(){}
 
     receiveMessage(value : any){

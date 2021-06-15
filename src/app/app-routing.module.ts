@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { Page404 } from './404-not-found/not-found.component';
 import { AttributeDirectivesComponent } from './attribute-directives/attribute-directives.component';
 import { ParentComponent } from './components-communication/parent.component';
+import { ViewChildDemoComponent } from './components-communication/view-child/view-child-example.component';
 import { ApplyingDirectivesComponent } from './custom-directives/custom-directive.component';
 import { DataAndPropertyBinding } from './data-and-property-binding/data-and-property-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path : 'structural-directives', component : StructuralDirectivesComponent},
   {path : 'custom-directives', component : ApplyingDirectivesComponent},
   {path : 'components-communication', component : ParentComponent},
+  {path : 'view-child-demo', component : ViewChildDemoComponent},
   {path : '**', component : Page404}
 ];
 

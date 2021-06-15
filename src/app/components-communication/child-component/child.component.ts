@@ -8,7 +8,7 @@ import { Component, EventEmitter, Input, OnChanges, Output } from "@angular/core
 export class ChildComponent {
     @Input() message : any;
     @Input('name') name : any;
-    @Input('status') status : any;
+    @Input('status') status : any; 
 
     @Output() childOutputToParent = new EventEmitter<any>();
 

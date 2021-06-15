@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { AttributeDirectivesComponent } from './attribute-directives/attribute-directives.component';
 import { ChildComponent } from './components-communication/child-component/child.component';
 import { ParentComponent } from './components-communication/parent.component';
+import { ViewChildDemoComponent } from './components-communication/view-child/view-child-example.component';
 import { ApplyingDirectivesComponent } from './custom-directives/custom-directive.component';
 import { HighlighterDirective } from './custom-directives/custom.directive';
 import { DataAndPropertyBinding } from './data-and-property-binding/data-and-property-binding.component';
@@ -29,7 +30,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
     ApplyingDirectivesComponent,
     HighlighterDirective,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    ViewChildDemoComponent
   ],
   imports: [
     BrowserModule,
